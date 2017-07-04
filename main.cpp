@@ -231,7 +231,8 @@ int main()
     }
     
     infile.close();
-
+    
+// output
     
     if(scratchGraph.isCyclic()){
         cout << "Graph contains cycle" << '\n';
