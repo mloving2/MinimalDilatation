@@ -23,8 +23,6 @@ class Graph
     int V;    // No. of vertices
     list<int> *adj;    // Pointer to an array containing adjacency lists
     vector<pair<int,vector<int>>> *adj2;
-    void DFSUtil(int v, bool visited[]);  // A function used by DFS
-    bool isCyclicUtil(int v, bool visited[], bool *rs);  // used by isCyclic()
 public:
     Graph(int V);   // Constructor
     void addEdge(int v, int w, vector<int>); // function to add an edge to graph
