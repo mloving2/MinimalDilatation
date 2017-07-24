@@ -79,7 +79,7 @@ int main()
     // open a file in read mode.
     ifstream infile;
     
-    infile.open("/Users/marissaloving/Downloads/scratch.txt");
+    infile.open("/Users/marissaloving/Downloads/scratchcomplete.txt");
     
     if (!infile.good())
         return 1; // exit if file not found
@@ -128,7 +128,7 @@ int main()
     
     Graph scratchGraph(numberOfVertices);
     
-    infile.open("/Users/marissaloving/Downloads/scratch.txt");
+    infile.open("/Users/marissaloving/Downloads/scratchcomplete.txt");
     
     if (!infile.good())
         return 1; // exit if file not found
