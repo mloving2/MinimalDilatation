@@ -45,23 +45,22 @@ void Graph::addEdge(int v, int w, vector<int> M)
 
 void Graph::iterativeDFS(int v){
     stack<int> S;
-    int top;
     vector<bool> Visited(V, false);
     
     S.push(v);
     
     while(!S.empty()){
-        top = S.top();
+        v = S.top();
         S.pop();
         if(Visited[v] == false){
+            cout << v << " ";
             Visited[v] = true;
         }
-        for (auto i = adj[top].begin(); i != adj[top].end(); ++i)
+        for (auto i = adj[v].begin(); i != adj[v].end(); ++i)
             if (!Visited[*i])
                 S.push(*i);
     }
 }
-
 
 int main()
 {
